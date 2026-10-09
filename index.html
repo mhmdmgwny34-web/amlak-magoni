@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="املاک مگونی - خرید، فروش و اجاره بهترین املاک لوکس در تهران و سایر شهرها">
+  <meta name="keywords" content="املاک، خرید خانه، اجاره، ویلا، آپارتمان، مشاور املاک">
+  <meta property="og:title" content="املاک مگونی | خانه رویاهای خود را پیدا کنید">
+  <meta property="og:description" content="بهترین املاک لوکس در تهران و سایر شهرها">
+  <meta property="og:type" content="website">
+  <title>املاک مگونی | خانه رویاهای خود را پیدا کنید</title>
+  <link rel="icon" type="image/png" href="assets/images/logo.png.jpg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- هدر -->
+  <header class="header" role="banner">
+    <div class="container header-inner bac">
+      <a href="index.html" class="logo" aria-label="املاک مگونی">
+        املاک<span>مگونی</span>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="منوی اصلی">
+        <a href="index.html" class="active" aria-current="page">خانه</a>
+        <a href="properties.html">املاک</a>
+        <a href="about.html">درباره ما</a>
+        <a href="blog.html">وبلاگ</a>
+        <a href="contact.html">تماس با ما</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#" class="btn btn-outline">ورود / ثبت نام</a>
+        <a href="#" class="btn btn-primary">ارسال ملک</a>
+      </div>
+
+      <button class="mobile-menu-btn" aria-label="باز کردن منو" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- هیرو با جستجو -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1 id="hero-title" class="hero-title">ساخت رویاهای یک خانه در هر زمان</h1>
+        <p class="hero-subtitle">معتبرترین املاک را برای شما فراهم می‌کنیم. با جستجو در بین هزاران آگهی، خانه رویایی خود را پیدا کنید.</p>
+
+        <!-- باکس جستجو -->
+        <form class="search-box" role="search" onsubmit="handleSearch(event)">
+          <h3 class="search-title">جستجوی سریع ملک</h3>
+          <div class="search-grid">
+            <div class="search-field">
+              <label for="propertyType">نوع ملک</label>
+              <select id="propertyType">
+                <option value="">همه</option>
+                <option value="apartment">آپارتمان</option>
+                <option value="villa">ویلا</option>
+                <option value="land">زمین</option>
+                <option value="office">دفتر کار</option>
+                <option value="shop">مغازه</option>
+              </select>
+            </div>
+
+            <div class="search-field">
+              <label for="location">منطقه</label>
+              <select id="location">
+                <option value="">همه مناطق</option>
+                <option value="tehran">تهران</option>
+                <option value="karaj">کرج</option>
+                <option value="isfahan">اصفهان</option>
+                <option value="mashhad">مشهد</option>
+                <option value="shiraz">شیراز</option>
+              </select>
+            </div>
+
+            <div class="search-field">
+              <label for="minPrice">حداقل قیمت (تومان)</label>
+              <input type="text" id="minPrice" placeholder="مثلاً ۲,۰۰۰,۰۰۰,۰۰۰">
+            </div>
+
+            <div class="search-field">
+              <label for="maxPrice">حداکثر قیمت (تومان)</label>
+              <input type="text" id="maxPrice" placeholder="مثلاً ۱۰,۰۰۰,۰۰۰,۰۰۰">
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-search">
+              🔍 جستجو
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- املاک ویژه -->
+    <section class="section" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 id="featured-title" class="section-title">املاک ویژه</h2>
+            <p class="section-subtitle">منتخبی از بهترین املاک موجود</p>
+          </div>
+          <a href="properties.html" class="link-more">مشاهده همه ←</a>
+        </div>
+
+        <div class="properties-grid">
+
+          <article class="property-card">
+            <div class="property-image">
+              <img src="assets/images/image-home.jpg" alt="آپارتمان لوکس در تهران" loading="lazy">
+              <span class="property-badge badge-sale">برای فروش</span>
+              <button class="property-fav" aria-label="افزودن به علاقه‌مندی">♡</button>
+            </div>
+            <div class="property-body">
+              <h3 class="property-title"><a href="property-single.html">آپارتمان لوکس در زعفرانیه</a></h3>
+              <p class="property-location">📍 تهران، زعفرانیه</p>
+              <div class="property-features">
+                <span>🛏 ۳ خواب</span>
+                <span>🚿 ۲ حمام</span>
+                <span>📐 ۱۸۰ متر</span>
+              </div>
+              <div class="property-footer">
+                <span class="property-price">۱۸,۵۰۰,۰۰۰,۰۰۰ تومان</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="property-card">
+            <div class="property-image">
+              <img src="assets/images/property-2.png.jpg" alt="ویلا مدرن در لواسان" loading="lazy">
+              <span class="property-badge badge-sale">برای فروش</span>
+              <button class="property-fav" aria-label="افزودن به علاقه‌مندی">♡</button>
+            </div>
+            <div class="property-body">
+              <h3 class="property-title"><a href="property-single.html">ویلا مدرن با استخر در لواسان</a></h3>
+              <p class="property-location">📍 تهران، لواسان</p>
+              <div class="property-features">
+                <span>🛏 ۵ خواب</span>
+                <span>🚿 ۴ حمام</span>
+                <span>📐 ۴۵۰ متر</span>
+              </div>
+              <div class="property-footer">
+                <span class="property-price">۴۵,۰۰۰,۰۰۰,۰۰۰ تومان</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="property-card">
+            <div class="property-image">
+              <img src="assets/images/property-3.png.jpg" alt="پنت‌هاوس در الهیه" loading="lazy">
+              <span class="property-badge badge-rent">برای اجاره</span>
+              <button class="property-fav" aria-label="افزودن به علاقه‌مندی">♡</button>
+            </div>
+            <div class="property-body">
+              <h3 class="property-title"><a href="property-single.html">پنت‌هاوس مدرن در الهیه</a></h3>
+              <p class="property-location">📍 تهران، الهیه</p>
+              <div class="property-features">
+                <span>🛏 ۴ خواب</span>
+                <span>🚿 ۳ حمام</span>
+                <span>📐 ۳۲۰ متر</span>
+              </div>
+              <div class="property-footer">
+                <span class="property-price">۲۵۰,۰۰۰,۰۰۰ تومان / ماهانه</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- چرا ما -->
+    <section class="section section-dark" aria-labelledby="why-title">
+      <div class="container">
+        <h2 id="why-title" class="section-title text-center">چرا ما را انتخاب کنید؟</h2>
+        <p class="section-subtitle text-center">مزیت‌هایی که ما را از سایر آژانس‌ها متمایز می‌کند</p>
+<div class="why-grid">
+  <div class="why-card">
+    <div class="why-icon"><img src="assets/images/image-icon-exprince.png" alt="تجربه"></div>
+    <h3>۱۵ سال تجربه</h3>
+    <p>با بیش از ۱۵ سال سابقه در بازار املاک، بهترین مشاوره را به شما ارائه می‌دهیم.</p>
+  </div>
+  <div class="why-card">
+    <div class="why-icon"><img src="assets/images/why-bg.jpg.jpg" alt="املاک"></div>
+    <h3>هزاران ملک متنوع</h3>
+    <p>از آپارتمان‌های اقتصادی تا ویلاهای لوکس، همه را یکجا داریم.</p>
+  </div>
+  <div class="why-card">
+    <div class="why-icon"><img src="assets/images/icon-support.png.png" alt="پشتیبانی"></div>
+    <h3>پاسخگویی سریع</h3>
+    <p>تیم پشتیبانی ما به‌صورت ۲۴ ساعته آماده پاسخگویی به شماست.</p>
+  </div>
+  <div class="why-card">
+    <div class="why-icon"><img src="assets/images/icon-secure.png.png" alt="امنیت"></div>
+    <h3>معاملات امن</h3>
+    <p>تمام معاملات با نظارت حقوقی و امنیت کامل انجام می‌شود.</p>
+  </div>
+</div>
+      </div>
+    </section>
+
+    <!-- مراحل خرید -->
+    <section class="section" aria-labelledby="steps-title">
+      <div class="container">
+        <div class="steps-layout">
+          <div class="steps-content">
+            <h2 id="steps-title" class="section-title">مراحل تهیه خانه</h2>
+            <p class="section-subtitle">فقط با سه مرحله ساده به خانه رویایی خود برسید</p>
+
+            <ol class="steps-list">
+              <li class="step-item">
+                <span class="step-number">۱</span>
+                <div>
+                  <h3>خانه رویایی خود را پیدا کنید</h3>
+                  <p>از بین هزاران آگهی، ملک مورد نظر خود را جستجو کنید.</p>
+                </div>
+              </li>
+              <li class="step-item">
+                <span class="step-number">۲</span>
+                <div>
+                  <h3>برنامه‌ریزی برای بازدید</h3>
+                  <p>با مشاوران ما تماس بگیرید و زمان بازدید را هماهنگ کنید.</p>
+                </div>
+              </li>
+              <li class="step-item">
+                <span class="step-number">۳</span>
+                <div>
+                  <h3>معامله را نهایی کنید</h3>
+                  <p>با خیال راحت قرارداد خود را امضا کنید و به خانه جدید خوش آمدید.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="steps-image">
+            <img src="assets/images/steps-image.jpg.webp" alt="مراحل خرید خانه" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- نظرات مشتریان -->
+    <section class="section section-soft" aria-labelledby="testimonial-title">
+      <div class="container">
+        <h2 id="testimonial-title" class="section-title text-center">نظرات مشتریان</h2>
+        <p class="section-subtitle text-center">آنچه مشتریان ما درباره ما می‌گویند</p>
+
+        <div class="testimonial-card">
+          <div class="testimonial-avatar">
+            <img src="assets/images/avatar-5.jpg" alt="عکس پروفایل مشتری" loading="lazy">
+          </div>
+          <div class="testimonial-content">
+            <h3>محمد صابری</h3>
+            <div class="testimonial-rating" aria-label="امتیاز ۵ از ۵">★★★★★</div>
+            <blockquote>
+              «املاک مگونی فوق‌العاده است. تیم حرفه‌ای و دلسوز آن‌ها تمام انتظارات را برآورده کرد. با دانش و تجربه خود، بهترین گزینه‌ها را به مشتریان ارائه می‌دهند و در تمام مراحل خرید کنار شما هستند. حتماً به همه توصیه می‌کنم.»
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- آخرین مقالات -->
+    <section class="section" aria-labelledby="blog-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 id="blog-title" class="section-title">آخرین اخبار و مقالات</h2>
+            <p class="section-subtitle">مقالات تخصصی درباره بازار املاک</p>
+          </div>
+          <a href="blog.html" class="link-more">مشاهده همه ←</a>
+        </div>
+
+        <div class="blog-grid">
+
+          <article class="blog-card">
+            <div class="blog-image">
+              <img src="assets/images/blog-1.png.jpg" alt="مسکن مدرن" loading="lazy">
+              <span class="blog-category">مسکن</span>
+            </div>
+            <div class="blog-body">
+              <h3><a href="blog-single.html">بهترین مناطق برای سرمایه‌گذاری در املاک</a></h3>
+              <p>با بررسی بهترین مناطق برای سرمایه‌گذاری در بازار مسکن، آشنا شوید و بهترین تصمیم را بگیرید.</p>
+              <span class="blog-date">۱۴۰۴/۰۷/۱۵</span>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-image">
+              <img src="assets/images/blog-2.png.jpg" alt="خرید خانه" loading="lazy">
+              <span class="blog-category">راهنما</span>
+            </div>
+            <div class="blog-body">
+              <h3><a href="blog-single.html">راهنمای خرید اولین خانه</a></h3>
+              <p>نکات کلیدی که قبل از خرید اولین خانه باید بدانید. از بودجه‌بندی تا امضای قرارداد.</p>
+              <span class="blog-date">۱۴۰۴/۰۷/۱۰</span>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-image">
+              <img src="assets/images/blog-3.png.jpg" alt="دکوراسیون" loading="lazy">
+              <span class="blog-category">دکوراسیون</span>
+            </div>
+            <div class="blog-body">
+              <h3><a href="blog-single.html">لوکس‌ترین دکوراسیون‌های مدرن</a></h3>
+              <p>ایده‌هایی برای طراحی داخلی خانه رویایی شما با جدیدترین سبک‌های دکوراسیون.</p>
+              <span class="blog-date">۱۴۰۴/۰۷/۰۵</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-box">
+          <div class="cta-content">
+      </div>
+      <h3>ملک خودرابرای فروش آماده کنید</h3>
+      <p>همین حالا ملک خودراثبت کنیدودرسریع ترین زمان بفروشید.</p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+  </main>
+
+  <!-- فوتر -->
+  <footer class="footer" id="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-col">
+        <a href="index.html" class="footer-logo">املاک<span>مگونی</span></a>
+        <p>ما به شما کمک می‌کنیم تا خانه رویایی خود را پیدا کنید. با سال‌ها تجربه در بازار املاک، در کنار شما هستیم.</p>
+      <div class="footer-socials">
+        <a href="#"><img src="assets/images/instagram.png" alt="اینستاگرام"></a>
+        <a href="#"><img src="assets/images/telegram.png" alt="تلگرام"></a>  
+        <a href="#"><img src="assets/images/whatsapp.png" alt="واتساپ"></a>                                                                                                                                               
+      </div>
+      </div>
+      <nav class="footer-col" aria-label="لینک‌های سریع">
+        <h4>لینک‌های سریع</h4>
+        <a href="about.html">درباره ما</a>
+        <a href="#">خدمات</a>
+        <a href="blog.html">وبلاگ</a>
+        <a href="index.html#footer">تماس با ما</a>
+      </nav>
+
+      <nav class="footer-col" aria-label="املاک">
+        <h4>املاک</h4>
+        <a href="properties.html">خرید ملک</a>
+        <a href="properties.html">اجاره ملک</a>
+        <a href="blog_singel.html">مشاوره سرمایه‌گذاری</a>
+      </nav>
+
+      <div class="footer-col">
+        <h4>تماس با ما</h4>
+        <p>📍 تهران، نیاوران، خیابان اصلی</p>
+        <p>📞 021675475</p>
+        <p>✉️ info@amlak-mohammad.ir</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © ۱۴۰۴ املاک مگونی — تمامی حقوق محفوظ است.
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js.js"></script>
+</body>
+</html>

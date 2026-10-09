@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="لیست املاک - جستجو و فیلتر پیشرفته برای خرید، فروش و اجاره ملک">
+  <title>املاک | املاک مگونی</title>
+  <link rel="icon" type="image/png" href="assets/images/logo.png.jpg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">املاک<span>مگونی</span></a>
+
+      <nav class="nav">
+        <a href="index.html">خانه</a>
+        <a href="properties.html" class="active">املاک</a>
+        <a href="about.html">درباره ما</a>
+        <a href="blog.html">وبلاگ</a>
+        <a href="index.html#footer">تماس با ما</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#" class="btn btn-outline">ورود / ثبت نام</a>
+        <a href="#" class="btn btn-primary">ارسال ملک</a>
+      </div>
+
+      <button class="mobile-menu-btn" aria-label="منو" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>املاک موجود</h1>
+        <nav class="breadcrumb">
+          <a href="index.html">خانه</a>
+          <span>/</span>
+          <span>املاک</span>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container shop-layout">
+
+        <aside class="sidebar">
+          <div class="filter-box">
+            <h3>نوع ملک</h3>
+            <label><input type="checkbox" checked> آپارتمان</label>
+            <label><input type="checkbox"> ویلا</label>
+            <label><input type="checkbox"> زمین</label>
+            <label><input type="checkbox"> دفتر کار</label>
+            <label><input type="checkbox"> مغازه</label>
+          </div>
+
+          <div class="filter-box">
+            <h3>منطقه</h3>
+            <label><input type="checkbox" checked> تهران</label>
+            <label><input type="checkbox"> کرج</label>
+            <label><input type="checkbox"> اصفهان</label>
+            <label><input type="checkbox"> مشهد</label>
+            <label><input type="checkbox"> شیراز</label>
+          </div>
+
+          <div class="filter-box">
+            <h3>محدوده قیمت</h3>
+            <label><input type="checkbox"> تا ۵ میلیارد</label>
+            <label><input type="checkbox"> ۵ تا ۱۵ میلیارد</label>
+            <label><input type="checkbox"> بیش از ۱۵ میلیارد</label>
+          </div>
+
+          <div class="filter-box">
+            <h3>تعداد خواب</h3>
+            <label><input type="checkbox"> ۱ خواب</label>
+            <label><input type="checkbox"> ۲ خواب</label>
+            <label><input type="checkbox"> ۳ خواب</label>
+            <label><input type="checkbox"> ۴ خواب و بیشتر</label>
+          </div>
+        </aside>
+
+        <div class="shop-content">
+
+          <div class="shop-toolbar">
+            <span class="results-count">نمایش ۱ تا ۹ از ۴۸ ملک</span>
+            <div class="sort-box">
+              <label for="sort">مرتب‌سازی:</label>
+              <select id="sort">
+                <option>جدیدترین</option>
+                <option>ارزان‌ترین</option>
+                <option>گران‌ترین</option>
+                <option>پربازدیدترین</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="properties-grid">
+
+            <article class="property-card">
+              <div class="property-image">
+                <img src="./assets/images/penthouse-zaferanieh.png" alt="آپارتمان لوکس زعفرانیه">
+                <span class="property-badge badge-sale">برای فروش</span>
+                <button class="property-fav" aria-label="افزودن به علاقه‌مندی">♡</button>
+              </div>
+              <div class="property-body">
+                <h3 class="property-title"><a href="property-single.html">آپارتمان لوکس در زعفرانیه</a></h3>
+                <p class="property-location">تهران، زعفرانیه</p>
+                <div class="property-features">
+                  <span>۳ خواب</span>
+                  <span>۲ حمام</span>
+                  <span>۱۸۰ متر</span>
+                </div>
+                <div class="property-footer">
+                  <span class="property-price">۱۸,۵۰۰,۰۰۰,۰۰۰ تومان</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="property-card">
+              <div class="property-image">
+                <img src="./assets/images/villa-lavasan.png" alt="ویلا مدرن لواسان">
+                <span class="property-badge badge-sale">برای فروش</span>
+                <button class="property-fav" aria-label="افزودن به علاقه‌مندی">♡</button>
+              </div>
+              <div class="property-body">
+                <h3 class="property-title"><a href="property-single.html">ویلا مدرن با استخر در لواسان</a></h3>
+                <p class="property-location">تهران، لواسان</p>
+                <div class="property-features">
+                  <span>۵ خواب</span>
+                  <span>۴ حمام</span>
+                  <span>۴۵۰ متر</span>
+                </div>
+                <div class="property-footer">
+                  <span class="property-price">۴۵,۰۰۰,۰۰۰,۰۰۰ تومان</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="property-card">
+              <div class="property-image">
+                <img src="./assets/images/penthose-elahiyeh.png" alt="پنت‌هاوس الهیه">
+                <span class="property-badge badge-rent">برای اجاره</span>
+                <button class="property-fav" aria-label="افزودن به علاقه‌مندی">♡</button>
+              </div>
+              <div class="property-body">
+                <h3 class="property-title"><a href="property-single.html">پنت‌هاوس مدرن در الهیه</a></h3>
+                <p class="property-location">تهران، الهیه</p>
+                <div class="property-features">
+                  <span>۴ خواب</span>
+                  <span>۳ حمام</span>
+                  <span>۳۲۰ متر</span>
+                </div>
+                <div class="property-footer">
+                  <span class="property-price">۲۵۰,۰۰۰,۰۰۰ تومان</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="property-card">
+              <div class="property-image">
+                <img src="./assets/images/apartmant-saadatabad.png" alt="آپارتمان مدرن">
+                <span class="property-badge badge-sale">برای فروش</span>
+                <button class="property-fav" aria-label="افزودن به علاقه‌مندی">♡</button>
+              </div>
+              <div class="property-body">
+                <h3 class="property-title"><a href="property-single.html">آپارتمان نوساز در سعادت‌آباد</a></h3>
+                <p class="property-location">تهران، سعادت‌آباد</p>
+                <div class="property-features">
+                  <span>۲ خواب</span>
+                  <span>۱ حمام</span>
+                  <span>۱۲۰ متر</span>
+                </div>
+                <div class="property-footer">
+                  <span class="property-price">۹,۸۰۰,۰۰۰,۰۰۰ تومان</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="property-card">
+              <div class="property-image">
+                <img src="./assets/images/villa-nowshahahr.png" alt="ویلا ساحلی">
+                <span class="property-badge badge-sale">برای فروش</span>
+                <button class="property-fav" aria-label="افزودن به علاقه‌مندی">♡</button>
+              </div>
+              <div class="property-body">
+                <h3 class="property-title"><a href="property-single.html">ویلا ساحلی در نوشهر</a></h3>
+                <p class="property-location">مازندران، نوشهر</p>
+                <div class="property-features">
+                  <span>۴ خواب</span>
+                  <span>۳ حمام</span>
+                  <span>۳۸۰ متر</span>
+                </div>
+                <div class="property-footer">
+                  <span class="property-price">۲۸,۰۰۰,۰۰۰,۰۰۰ تومان</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="property-card">
+              <div class="property-image">
+                <img src="./assets/images/office-vanak.png" alt="دفتر کار مدرن">
+                <span class="property-badge badge-rent">برای اجاره</span>
+                <button class="property-fav" aria-label="افزودن به علاقه‌مندی">♡</button>
+              </div>
+              <div class="property-body">
+                <h3 class="property-title"><a href="property-single.html">دفتر کار مدرن در ونک</a></h3>
+                <p class="property-location">تهران، ونک</p>
+                <div class="property-features">
+                  <span>—</span>
+                  <span>۲ حمام</span>
+                  <span>۱۵۰ متر</span>
+                </div>
+                <div class="property-footer">
+                  <span class="property-price">۱۸۰,۰۰۰,۰۰۰ تومان</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="property-card">
+              <div class="property-image">
+                <img src="./assets/images/apartmant-poonak.png" alt="آپارتمان اقتصادی">
+                <span class="property-badge badge-sale">برای فروش</span>
+                <button class="property-fav" aria-label="افزودن به علاقه‌مندی">♡</button>
+              </div>
+              <div class="property-body">
+                <h3 class="property-title"><a href="property-single.html">آپارتمان اقتصادی در پونک</a></h3>
+                <p class="property-location">تهران، پونک</p>
+                <div class="property-features">
+                  <span>۲ خواب</span>
+                  <span>۱ حمام</span>
+                  <span>۹۵ متر</span>
+                </div>
+                <div class="property-footer">
+                  <span class="property-price">۵,۲۰۰,۰۰۰,۰۰۰ تومان</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="property-card">
+              <div class="property-image">
+                <img src="./assets/images/villa-kordan.png" alt="ویلا دوبلکس">
+                <span class="property-badge badge-sale">برای فروش</span>
+                <button class="property-fav" aria-label="افزودن به علاقه‌مندی">♡</button>
+              </div>
+              <div class="property-body">
+                <h3 class="property-title"><a href="property-single.html">ویلا دوبلکس در کردان</a></h3>
+                <p class="property-location">کرج، کردان</p>
+                <div class="property-features">
+                  <span>۴ خواب</span>
+                  <span>۳ حمام</span>
+                  <span>۳۵۰ متر</span>
+                </div>
+                <div class="property-footer">
+                  <span class="property-price">۲۲,۰۰۰,۰۰۰,۰۰۰ تومان</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="property-card">
+              <div class="property-image">
+                <img src="./assets/images/apartemant-jordan.png" alt="آپارتمان فول امکانات">
+                <span class="property-badge badge-rent">برای اجاره</span>
+                <button class="property-fav" aria-label="افزودن به علاقه‌مندی">♡</button>
+              </div>
+              <div class="property-body">
+                <h3 class="property-title"><a href="property-single.html">آپارتمان فول امکانات در جردن</a></h3>
+                <p class="property-location">تهران، جردن</p>
+                <div class="property-features">
+                  <span>۳ خواب</span>
+                  <span>۲ حمام</span>
+                  <span>۲۰۰ متر</span>
+                </div>
+                <div class="property-footer">
+                  <span class="property-price">۳۲۰,۰۰۰,۰۰۰ تومان</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="pagination">
+            <a href="#" class="page-btn active">۱</a>
+            <a href="#" class="page-btn">۲</a>
+            <a href="#" class="page-btn">۳</a>
+            <a href="#" class="page-btn">۴</a>
+            <a href="#" class="page-btn">بعدی ←</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+     <div class="footer-col">
+       <a href="index.html" class="footer-logo">
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

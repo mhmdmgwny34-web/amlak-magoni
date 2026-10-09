@@ -1,0 +1,122 @@
+/* ============================================
+   ریسپانسیو - املاک مگونی
+   ============================================ */
+
+/* ---------- تبلت بزرگ ---------- */
+@media (max-width: 1100px) {
+  .search-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .btn-search {
+    grid-column: span 3;
+    width: 100%;
+  }
+}
+
+/* ---------- تبلت ---------- */
+@media (max-width: 992px) {
+  .nav { display: none; }
+  .mobile-menu-btn { display: block; }
+  .header-actions .btn-outline { display: none; }
+
+  .hero { min-height: 500px; padding: 60px 0 40px; }
+  .hero-title { font-size: 32px; }
+  .hero-subtitle { font-size: 15px; }
+
+  .search-grid { grid-template-columns: 1fr 1fr; }
+  .btn-search { grid-column: span 2; }
+
+  .properties-grid,
+  .blog-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .steps-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .steps-image { order: -1; }
+
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+
+  .section { padding: 60px 0; }
+}
+
+/* ---------- موبایل ---------- */
+@media (max-width: 640px) {
+  .container { padding: 0 16px; }
+
+  .header-inner { height: 65px; }
+  .logo { font-size: 19px; }
+  .header-actions .btn-primary { padding: 8px 14px; font-size: 13px; }
+
+  .hero { min-height: auto; padding: 50px 0 40px; }
+  .hero-title { font-size: 26px; letter-spacing: 0; }
+  .hero-subtitle { font-size: 14px; margin-bottom: 30px; }
+
+  .search-box { padding: 20px; border-radius: 14px; }
+  .search-title { font-size: 16px; margin-bottom: 16px; }
+  .search-grid { grid-template-columns: 1fr; gap: 10px; }
+  .btn-search { grid-column: span 1; }
+
+  .section { padding: 45px 0; }
+  .section-title { font-size: 22px; }
+  .section-subtitle { font-size: 14px; }
+
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .properties-grid,
+  .blog-grid,
+  .why-grid { grid-template-columns: 1fr; }
+
+  .testimonial-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .testimonial-avatar { width: 90px; height: 90px; }
+
+  .cta-box {
+    padding: 30px 24px;
+    text-align: center;
+    justify-content: center;
+  }
+  .cta-box h3 { font-size: 20px; }
+  .cta-box .btn { width: 100%; }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-bottom: 30px;
+  }
+
+  .step-item { gap: 14px; }
+  .step-number { width: 42px; height: 42px; font-size: 17px; }
+
+  /* منوی موبایل باز شده */
+  .nav.nav-open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    inset-inline: 0;
+    background: #fff;
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-md);
+    gap: 16px;
+    z-index: 99;
+  }
+}
+
+/* ---------- موبایل کوچک ---------- */
+@media (max-width: 400px) {
+  .hero-title { font-size: 22px; }
+  .btn { padding: 10px 18px; font-size: 13px; }
+}
